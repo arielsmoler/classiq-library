@@ -1,0 +1,10 @@
+nav:
+  - index.md
+  - functions.md
+  - generative-descriptions.md
+  - quantum-entry-point.md
+  - quantum-types.md
+  - quantum-variables.md
+  - statements
+  - operators.md
+  - classical-types.md

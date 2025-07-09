@@ -1,0 +1,5 @@
+nav:
+  - index.ipynb
+  - quantum_variables_and_functions.ipynb
+  - quantum_operations.ipynb
+  - classical_variables_and_operations.ipynb
