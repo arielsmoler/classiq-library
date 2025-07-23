@@ -1,0 +1,9 @@
+{
+  "test_id": "test_001",
+  "timestamp": "2025-07-23T10:30:00Z",
+  "agent_info": {
+    "agent": "claude-code/cline",
+    "generation_time_ms": 2340,
+    "tokens_used": 450
+  }
+}
