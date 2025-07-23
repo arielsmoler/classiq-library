@@ -58,7 +58,7 @@ For the `sample` method, these variations are available:
 
 The `estimate` method has the same variations:
 
--   `es.estimate(hamiltonian: Union[str, PauliTerm], parameters: Optional[ExecutionParams])`
+-   `es.estimate(hamiltonian: SparsePauliOp, parameters: Optional[ExecutionParams])`
 
 -   `es.batch_estimate(hamiltonian, parameters: List[ExecutionParams])`
 
@@ -97,6 +97,7 @@ qprog = synthesize(main)
 
 with ExecutionSession(qprog) as execution_session:
     sample_result = execution_session.sample({"t": 0.5})
+    print(sample_result.dataframe)
     batch_sample_result = execution_session.batch_sample([{"t": 0.5}, {"t": 0.6}])
     sample_job = execution_session.submit_sample({"t": 0.5})
     batch_sample_job = execution_session.submit_batch_sample([{"t": 0.5}, {"t": 0.6}])
@@ -113,7 +114,6 @@ from classiq import (
     QBit,
     CReal,
     synthesize,
-    PauliTerm,
     Pauli,
     RX,
     allocate,
@@ -130,10 +130,7 @@ def main(x: Output[QBit], t: CReal):
 qprog = synthesize(main)
 
 with ExecutionSession(qprog) as execution_session:
-    hamiltonian = [
-        PauliTerm(pauli=[Pauli.I], coefficient=1),
-        PauliTerm(pauli=[Pauli.Z], coefficient=2),
-    ]
+    hamiltonian = Pauli.I(0) + 2 * Pauli.Z(0)
 
     estimate_result = execution_session.estimate(hamiltonian, {"t": 0.5})
     batch_estimate_result = execution_session.batch_estimate(

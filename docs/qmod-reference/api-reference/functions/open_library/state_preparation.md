@@ -20,5 +20,6 @@ search:
             - inplace_prepare_complex_amplitudes
             - prepare_dicke_state
             - prepare_dicke_state_unary_input
+            - prepare_basis_state
 <!-- prettier-ignore-end -->
 <!-- spell-checker: enable -->

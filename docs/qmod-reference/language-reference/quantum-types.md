@@ -340,6 +340,9 @@ Expressions of quantum struct type support field-access operation in the form - 
 
 -   `size`: The total number of qubits (= the sum of field sizes).
 
+In Qmod's Python embedding, the quantum struct's total number of qubits can be
+retrieved using the `num_qubits` class attribute.
+
 ### Examples
 
 In the following example, quantum struct `MyQStruct` is defined and subsequently initialized
@@ -434,3 +437,11 @@ very high probability. This is an example of an output. Here is an output exampl
     state={'p': {'a': 0.0, 'b': 0.625}} shots=350
     state={'p': {'a': 0.25, 'b': 0.375}} shots=344
     state={'p': {'a': 0.5, 'b': 0.125}} shots=306
+
+In Qmod's Python embedding, the size of `MyProblem` is given by
+`MyProblem.num_qubits`:
+[comment]: DO_NOT_TEST
+
+```python
+print(MyProblem.num_qubits)  # 5
+```

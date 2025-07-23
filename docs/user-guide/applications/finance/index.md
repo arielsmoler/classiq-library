@@ -23,7 +23,7 @@ convergence rate of 1/M, where M is the number of Grover iterations,
 representing a theoretical quadratic speed-up over classical Monte Carlo methods.
 
 Other financial models such as portfolio optimizations can be modeled by
-the [Classiq combinatorial optimization](../combinatorial-optimization/index.md) methods.
+the [Classiq optimization](../optimization/index.md) methods.
 
 ## References
 

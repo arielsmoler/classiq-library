@@ -129,7 +129,7 @@ Structs are aggregates of variables, called _fields_, each with its own name and
     Fields need to be declared with type-hints like classical arguments of functions.
     Fields are initialized and accessed like attributes of Python object.
 
-#### Example
+### Example
 
 In the following example a struct type called `MyStruct` is defined. Function `foo`
 takes an argument of this type and accesses its fields. Function `main` instantiates
@@ -188,3 +188,55 @@ and populates `MyStruct` in its call to `foo`.
         allocate(2, qba)
         foo(MyStruct(loop_counts=[1, 2], angle=0.1), qba)
     ```
+
+## Hamiltonians
+
+Qmod's Python embedding offers a specialized syntax for creating
+[sparse Hamiltonian](https://docs.classiq.io/latest/qmod-reference/api-reference/classical-types/#classiq.qmod.builtins.structs.SparsePauliOp)
+objects.
+Calling a
+[Pauli](https://docs.classiq.io/latest/qmod-reference/api-reference/classical-types/#classiq.qmod.builtins.enums.Pauli)
+enum value (e.g., `Pauli.X`) with an index (e.g., `Pauli.X(3)`) creates a
+single-qubit Pauli operator.
+The multiplication of single-qubit Pauli operators (e.g.,
+`Pauli.X(1) * Pauli.Y(2)`) constructs the tensor product of these operators on
+the respective qubits.
+These can be linearly combined in a sum, each optionally
+with a scalar coefficient (e.g., `0.5 * Pauli.X(2) + Pauli.Y(0)*Pauli.Z(2)`).
+
+### Example
+
+The Hamiltonian specified by the Pauli strings `XYZ` and `IXI` with coefficients
+`0.5` and `0.8` respectively is specified in the standard struct literal syntax
+as follows:
+[comment]: DO_NOT_TEST
+
+```python
+H = SparsePauliOp(
+    terms=[
+        SparsePauliTerm(
+            paulis=[
+                IndexedPauli(pauli=Pauli.Z, index=0),
+                IndexedPauli(pauli=Pauli.Y, index=1),
+                IndexedPauli(pauli=Pauli.X, index=2),
+            ],
+            coefficient=0.5,
+        ),
+        SparsePauliTerm(
+            paulis=[
+                IndexedPauli(pauli=Pauli.X, index=1),
+            ],
+            coefficient=0.8,
+        ),
+    ],
+    num_qubits=3,
+)
+```
+
+You can specify the same Hamiltonian using the specialized Hamiltonian syntax as
+follows:
+[comment]: DO_NOT_TEST
+
+```python
+H = 0.5 * Pauli.Z(0) * Pauli.Y(1) * Pauli.X(2) + 0.8 * Pauli.X(1)
+```

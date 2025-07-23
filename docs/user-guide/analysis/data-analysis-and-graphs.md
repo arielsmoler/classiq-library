@@ -27,7 +27,7 @@ def main(res: Output[QBit]) -> None:
 
 
 qprog = synthesize(main)
-analyzer = Analyzer(circuit=QuantumProgram.from_qprog(qprog))
+analyzer = Analyzer(circuit=qprog)
 ```
 
 ## Graphs and Data
@@ -138,7 +138,7 @@ multi-qubit gates, and total number of gates.
 
 ```python
 providers = ["IBM Quantum", "Azure Quantum", "Amazon Braket"]
-analyzer = Analyzer(circuit=GeneratedCircuit.from_qprog(qprog))
+analyzer = Analyzer(circuit=qprog)
 analyzer.get_hardware_comparison_table(providers=providers)
 analyzer.plot_hardware_comparison_table()
 ```

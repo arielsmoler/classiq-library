@@ -234,7 +234,7 @@ filters quantum states such that `y <= x[0] + x[1] + x[2]`.
 
 Synthesizing this model creates the following quantum program. Note how `control`
 is implemented as a result of an arithmetic computation. After applying the `control` operation,
-the arithmetic operation is un-computed.
+the arithmetic operation is uncomputed.
 
 ![control_arithmetic.jpg](resources/control_arithmetic.jpg)
 

@@ -9,17 +9,13 @@ including trigonometric functions and multiplicative invert ($x^{-1}$).
 
 === "Native"
 
-    _target-var_ ***=** _expression_
-
-    _expression_ supports quantum numeric subscripts: `[0, 1, 2, 3][n]` or
-    `lookup_table[n]` where `lookup_table` is an array of classical real numbers
-    and `n` is an unsigned quantum integer.
+    _target-var_ ***=** _quantum-expression_
 
 === "Python"
 
-    _target-var_ **\*=** _expression_ <br/>
+    _target-var_ **\*=** _quantum-expression_ <br/>
     OR <br/>
-    **assign_amplitude(**_expression_**,** _target-var_**)**
+    **assign_amplitude(**_quantum-expression_**,** _target-var_**)**
 
     #### Notes
 

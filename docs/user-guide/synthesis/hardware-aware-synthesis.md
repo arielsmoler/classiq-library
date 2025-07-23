@@ -10,9 +10,9 @@ to run your quantum program. The synthesis engine takes the parameters of this h
 account. For example, the engine could choose the implementation of a function that
 requires the least number of swaps, given the connectivity of the hardware.
 
-If the hardware's basis gate set (or the specified basis gate set) is a specific
-variation of Clifford + T (`X`, `Z`, `H`, `T`, `CX`, and `CCX`), the Classiq
-platform uses the Solovay-Kitaev algorithm to approximate
+If the hardware device's basis gate set contains the Clifford gates `X`, `Z`,
+`H`, `T`, and `CX` but does not contain arbitrary-angle rotation gates such as `RX`,
+the Classiq platform uses the Solovay-Kitaev algorithm to approximate
 single-qubit gates when necessary. You can set the maximum iterations of the
 Solovay-Kitaev algorithm in the preferences, thus tuning the algorithm target
 accuracy. (Larger values usually result in better and longer approximations,

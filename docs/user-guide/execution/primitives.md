@@ -32,6 +32,8 @@ sample the state of the quantum program.
     - The `counts_by_qubit_order` method allows access to the `counts` attribute in the required qubit order.
     - The `num_shots` attribute is the sum of all of the resulting count fields.
 
+    The `ExecutionDetails` object also contains a `dataframe` property that displays the relevant information in a pandas dataframe for easy manipulation.
+
 ## VQE
 
 The `vqe` execution primitive instructs the execution process to perform the

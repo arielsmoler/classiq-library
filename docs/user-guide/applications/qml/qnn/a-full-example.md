@@ -210,6 +210,12 @@ check_accuracy(model, data_loader)
 The results show that the accuracy is $1$, meaning a 100% success rate at performing the required transformation (i.e. the network learned to perform a X-gate).
 We may further test it by printing the value of `model.qlayer.weight`, which is a tensor of shape `(1,1)`, which should, after training, be close to $\pi$.
 
+Finally, we safely teardown the `QLayer` instance.
+
+```python
+model.qlayer.teardown()
+```
+
 # Summary
 
 In this example, we wrote a fully working Quantum Neural Network from scratch, trained it, and saw its success at learning the requested transformation.

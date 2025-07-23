@@ -46,7 +46,7 @@ preferences = Preferences(
 qprog = synthesize(main, preferences=preferences)
 show(qprog)
 
-print(QuantumProgram.from_qprog(qprog).qsharp)
+print(qprog.qsharp)
 ```
 
 ## Output Formats
@@ -59,14 +59,14 @@ synthesized quantum programs. You can choose multiple output formats.
 
 The output options:
 
--   `"qasm"` - OpenQASM. The qasm circuit is in `circuit.qasm`, where `circuit = QuantumProgram.from_qprog(qprog)`.
-    -   By default, the Classiq platform uses OpenQASM 2.0. To use OpenQASM 3.0 instead, set the
-        `qasm3` field of the preferences to `True`.
--   `"qsharp"` - Q#. The qsharp circuit is in `circuit.qsharp`.
--   `"qir"` - Microsoft's QIR. The QIR circuit is in `circuit.qir`.
--   `"ionq"` - IonQ Json format is in `circuit.ionq`.
--   `"cirq_json"` - Cirq Json format is in `circuit.cirq_json`.
--   `"qasm_cirq_compatible"` - OpenQASM 2.0 is compatible with Cirq, which is in `circuit.qasm_cirq_compatible`.
+-   `"qasm"` - OpenQASM. The qasm circuit is in `qprog.qasm`.
+-   By default, the Classiq platform uses OpenQASM 2.0. To use OpenQASM 3.0 instead, set the
+    `qasm3` field of the preferences to `True`.
+-   `"qsharp"` - Q#. The qsharp circuit is in `qprog.qsharp`.
+-   `"qir"` - Microsoft's QIR. The QIR circuit is in `qprog.qir`.
+-   `"ionq"` - IonQ Json format is in `qprog.ionq`.
+-   `"cirq_json"` - Cirq Json format is in `qprog.cirq_json`.
+-   `"qasm_cirq_compatible"` - OpenQASM 2.0 is compatible with Cirq, which is in `qprog.qasm_cirq_compatible`.
 
 ## Optimization Level
 

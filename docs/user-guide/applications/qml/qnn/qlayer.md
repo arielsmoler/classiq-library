@@ -10,7 +10,7 @@ The `QLayer` object is defined like this:
 class QLayer(nn.Module):
     def __init__(
         self,
-        quantum_program: SerializedQuantumProgram,
+        quantum_program: QuantumProgram,
         execute: ExecuteFunction,
         post_process: PostProcessFunction,
     ) -> None: ...
@@ -24,7 +24,7 @@ Or,
 class QLayer(nn.Module):
     def __init__(
         self,
-        quantum_program: SerializedQuantumProgram,
+        quantum_program: QuantumProgram,
         post_process: PostProcessFunction,
     ) -> None: ...
 ```
@@ -33,9 +33,13 @@ The first parameter, `quantum_program`, is the result of [synthesizing a quantum
 Note that the parameters are assumed to follow the API stated in [qnn](qnn.md).
 
 The second parameter is a callable which is responsible for executing the quantum program, usually with [`execute_qnn`](#execution).
-It takes a `SerializedQuantumProgram` and `MultipleArguments` (a list of arguments sets to assign to the quantum program parameters) as inputs, and returns a `ResultsCollection`.
+It takes a `QuantumProgram` and `MultipleArguments` (a list of arguments sets to assign to the quantum program parameters) as inputs, and returns a `ResultsCollection`.
 Note that this argument can be left out, as demonstrated in the second code block.
 If it is not supplied, the layer will create an `ExecutionSession` and sample the quantum program automagically.
+
+???+ note
+
+    In order to properly close the `ExecutionSession`, if it was created, call the `teardown` method of `QLayer`.
 
 The third parameter is a callable which is responsible for post-processing each execution result. It takes a `SavedResult` as input, process it and returns a `Tensor`.
 
@@ -53,11 +57,11 @@ from classiq.applications.qnn.types import (
 )
 
 from classiq import execute_qnn
-from classiq.synthesis import SerializedQuantumProgram
+from classiq.synthesis import QuantumProgram
 
 
 def execute(
-    quantum_program: SerializedQuantumProgram, arguments: MultipleArguments
+    quantum_program: QuantumProgram, arguments: MultipleArguments
 ) -> ResultsCollection:
     return execute_qnn(quantum_program, arguments)
 
@@ -75,7 +79,7 @@ It enables you to easily execute a batch of input arguments, and instruct whethe
 
 The inputs for `execute_qnn` are:
 
--   `quantum_program` of type `SerializedQuantumProgram`
+-   `quantum_program` of type `QuantumProgram`
 -   `arguments` of type `MultipleArguments`
 -   (optionally) `observable` of type `PauliOperator`.
 
@@ -99,14 +103,14 @@ The type of each `SavedResult` depends on the `observable` input:
 ```python
 # Execute and return the sample results
 def execute(
-    quantum_program: SerializedQuantumProgram, arguments: MultipleArguments
+    quantum_program: QuantumProgram, arguments: MultipleArguments
 ) -> ResultsCollection:
     return execute_qnn(quantum_program, arguments)
 
 
 # Execute and return the estimation results according to a specific observable
 def execute(
-    quantum_program: SerializedQuantumProgram, arguments: MultipleArguments
+    quantum_program: QuantumProgram, arguments: MultipleArguments
 ) -> ResultsCollection:
     return execute_qnn(
         quantum_program,

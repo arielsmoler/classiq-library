@@ -12,6 +12,7 @@ search:
             - single_pauli_exponent
             - commuting_paulis_exponent
             - suzuki_trotter
+            - multi_suzuki_trotter
             - parametric_suzuki_trotter
             - sparse_suzuki_trotter
             - qdrift

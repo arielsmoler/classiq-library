@@ -1,7 +1,7 @@
 # Generative Descriptions
 
 Qmod supports classical variables, expressions, and control-flow statements. In addition,
-in Qmod's Python embedding it's often useful to rely on Python itself to perform classical
+in Qmod's Python embedding it is often useful to rely on Python itself to perform classical
 computations at model construction time. This lets you leverage Python's language features,
 libraries, and debugging tools.
 
