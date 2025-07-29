@@ -1,0 +1,11 @@
+/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/open_library/functions/state_preparation.py:295: ClassiqDeprecationWarning: Function 'prepare_int' is deprecated. Use assignment statement in the form '<var> |= <expression>'  or 'assign(<expression>, <var>)' instead.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/nivdavidson/Projects/classiq-library-1/quantum_dsl_tests/no-classiq-tutorial--Claude/test_3/generated_code_1.py", line 23, in <module>
+    print(f"x = {results.x}")
+                 ^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/pydantic/main.py", line 856, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute 'x'')
+AttributeError: 'ExecutionDetails' object has no attribute 'x'
+
+Execution results:

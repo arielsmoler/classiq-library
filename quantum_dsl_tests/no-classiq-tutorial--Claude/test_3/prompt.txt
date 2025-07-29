@@ -1,0 +1,6 @@
+Test 3: Quantum Arithmetic (Basic)
+Write a Classiq quantum program that:
+1. Initializes quantum number 'x' to value 2
+2. Initializes quantum number 'y' to value 7
+3. Computes 'res = x + y' using quantum arithmetic
+4. Synthesize and execute the program

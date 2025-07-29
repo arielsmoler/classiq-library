@@ -1,0 +1,4 @@
+Circuit synthesized successfully!
+Number of qubits: 4
+Hamiltonian evolution with Suzuki-Trotter completed.
+Quantum program link: https://platform.classiq.io/circuit/30XqIaNkLf4zYz7hRd75iooJ5SY

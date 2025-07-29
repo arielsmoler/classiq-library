@@ -1,0 +1,7 @@
+Test 2: Bell State Creation (Basic)
+Create a quantum program in Classiq that:
+1. Declares a QArray of 2 qubits as output
+2. Applies Hadamard gate to the first qubit
+3. Applies CX gate with first qubit as control and second as target
+4. This should create the |+⟩ Bell state: (|00⟩ + |11⟩)/√2
+5. Synthesize and execute to verify only |00⟩ and |11⟩ states appear

@@ -1,0 +1,18 @@
+{
+  "overall_score": 33,
+  "max_score": 35,
+  "breakdown": {
+    "output_correctness": {
+      "score": 18,
+      "max": 20,
+      "similarity_score": 0.92
+    },
+    "algorithm_correctness": {
+      "score": 15,
+      "max": 15,
+      "correct_implementation": true
+    }
+  },
+  "test_cases_passed": 8,
+  "total_test_cases": 10
+}

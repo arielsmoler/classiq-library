@@ -1,0 +1,2 @@
+Circuit synthesized successfully!
+Number of qubits: 4

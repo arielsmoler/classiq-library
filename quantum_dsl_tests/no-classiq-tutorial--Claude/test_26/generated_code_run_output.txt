@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/nivdavidson/Projects/classiq-library-1/quantum_dsl_tests/no-classiq-tutorial--claude/test_26/generated_code.py", line 4, in <module>
+    @qstruct
+     ^^^^^^^
+NameError: name 'qstruct' is not defined. Did you mean: 'QStruct'?
