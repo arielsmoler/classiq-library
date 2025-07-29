@@ -1,0 +1,6 @@
+Iteration 1 Output:
+Traceback (most recent call last):
+  File "/Users/nivdavidson/Projects/classiq-library-1/quantum_dsl_tests/no-classiq-tutorial--Claude/test_10/generated_code.py", line 15, in <module>
+    def main(x: Output[QNum[3]], y: Output[QNum]):
+                ^^^^^^
+NameError: name 'Output' is not defined

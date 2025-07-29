@@ -1,0 +1,15 @@
+Final v2 Attempt Output:
+Quantum program link: https://platform.classiq.io/circuit/30XrwqRq84ZdiMFIbya1Q5vFGDW
+Execution completed successfully!
+Result: [TaggedExecutionDetails(value_type=<SavedResultValueType.ExecutionDetails: 'ExecutionDetails'>, name='result', value=ExecutionDetails(vendor_format_result={}, counts={'100': 555, '010': 470, '000': 515, '111': 508}, counts_lsb_right=True, probabilities={}, parsed_states={'100': {'qubits': [0, 0, 1]}, '010': {'qubits': [0, 1, 0]}, '000': {'qubits': [0, 0, 0]}, '111': {'qubits': [1, 1, 1]}}, histogram=None, output_qubits_map={'qubits': (0, 1, 2)}, state_vector=None, parsed_state_vector_states=None, physical_qubits_map={'qubits': (0, 1, 2)}, num_shots=2048, output_type_map={'qubits': RegisterQuantumType(quantum_types=QuantumBitvector(source_ref=None, back_ref=None, element_type=QuantumBit(source_ref=None, back_ref=None, kind='qbit'), kind='qvec', length=Expression(source_ref=None, back_ref=None, expr='3')), size=3)}))]
+
+Verification:
+The circuit applies Hadamard to 2 control qubits and controlled-X to target
+Expected states should show superposition effects from the Hadamard gates
+and controlled behavior from the C-X gate
+Verification: Execution successful with measurement results
+
+SUCCESS! The code executed successfully with proper results showing the expected quantum behavior:
+- States '000', '010', '100', '111' showing superposition effects
+- 2048 shots executed successfully
+- Proper measurement counts demonstrate controlled-X behavior

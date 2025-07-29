@@ -1,0 +1,11 @@
+Final Attempt Output:
+Traceback (most recent call last):
+  File "/Users/nivdavidson/Projects/classiq-library-1/quantum_dsl_tests/no-classiq-tutorial--Claude/test_16/generated_code_final.py", line 44, in <module>
+    print("Result counts:", result.counts_by_bit_string)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'counts_by_bit_string'
+
+Quantum program link: https://platform.classiq.io/circuit/30XrtBzcoTjNIgZzpPRqsx3EaKb
+Execution completed successfully!
+
+Error: Result object handling issue - need to fix result attribute access

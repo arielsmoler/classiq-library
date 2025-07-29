@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/Users/nivdavidson/Projects/classiq-library-1/quantum_dsl_tests/no-classiq-tutorial--claude/test_28/generated_code_2.py", line 154, in <module>
+    result = run_shors_algorithm()
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/quantum_dsl_tests/no-classiq-tutorial--claude/test_28/generated_code_2.py", line 105, in run_shors_algorithm
+    qmod = create_model(main)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/qmod/create_model_function.py", line 61, in create_model
+    model = entry_point.create_model(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 341, in create_model
+    return QFunc(_dec_main).create_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 156, in create_model
+    return self._create_generative_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 181, in _create_generative_model
+    return interpreter.expand()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/model_expansions/interpreters/base_interpreter.py", line 138, in expand
+    self._error_manager.report_errors(ClassiqExpansionError)
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/qmod/semantics/error_manager.py", line 86, in report_errors
+    raise error_type("\n\t" + "\n\t".join(errors))
+classiq.interface.exceptions.ClassiqExpansionError: 
+	ClassiqValueError: len(<var>) is not supported for quantum variables - use <var>.len instead
+		at file generated_code_2.py line 69 character 4 in function qpe_shor
+If you need further assistance, please reach out on our Community Slack channel at: https://short.classiq.io/join-slack or open a support ticket at: https://classiq-community.freshdesk.com/support/tickets/new
+
+Shor's Algorithm for factoring N = 55
+==================================================
+Using base a = 2
+Target: Find period r such that 2^r ≡ 1 (mod 55)
+
+Creating quantum model...

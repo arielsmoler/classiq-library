@@ -1,0 +1,7 @@
+Test 8: Control Operations (Intermediate)
+Write a Classiq program that:
+1. Declares output QNum 'x' and QBit 'target'
+2. Initialize x to value 9 using numeric assignment
+3. Allocate the target qubit
+4. Use control operator to flip target qubit if x equals 9
+5. Synthesize and show the circuit

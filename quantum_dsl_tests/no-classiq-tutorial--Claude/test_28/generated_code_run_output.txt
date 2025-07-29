@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/nivdavidson/Projects/classiq-library-1/quantum_dsl_tests/no-classiq-tutorial--claude/test_28/generated_code.py", line 167, in <module>
+    main()
+  File "/Users/nivdavidson/Projects/classiq-library-1/quantum_dsl_tests/no-classiq-tutorial--claude/test_28/generated_code.py", line 132, in main
+    qmod = create_model(lambda: shors_algorithm(N, a))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/qmod/create_model_function.py", line 56, in create_model
+    if entry_point.func_decl.name != MAIN_FUNCTION_NAME:
+       ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'func_decl'
+
+Factoring N = 55 using Shor's algorithm
+Using base a = 2

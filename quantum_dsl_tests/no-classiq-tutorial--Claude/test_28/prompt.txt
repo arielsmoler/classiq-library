@@ -1,0 +1,2 @@
+Test 28: shor_55
+Suggest a working example of factoring 55 with Shor algorithm using Classiq. Synthesize and show the synthesized output.

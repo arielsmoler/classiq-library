@@ -1,0 +1,7 @@
+Quantum computation using within-apply pattern:
+x=3, y=5, z=2
+Expected: res = x + y + z = 10
+Measurement counts: {'1010': 2048}
+Parsed states: {'1010': {'res': 10}}
+Quantum result: res = 10
+SUCCESS: Within-apply pattern correctly computed x + y + z!

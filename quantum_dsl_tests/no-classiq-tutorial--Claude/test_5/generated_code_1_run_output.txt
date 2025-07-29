@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/nivdavidson/Projects/classiq-library-1/quantum_dsl_tests/no-classiq-tutorial--Claude/test_5/generated_code_1.py", line 40, in <module>
+    print(f"Measurement counts: {result.counts}")
+                                 ^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'counts'. Did you mean: 'count'?
+
+Quantum computation result:
+x=3, y=5, z=2
+res = x + y + z = 10

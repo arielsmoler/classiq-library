@@ -1,0 +1,8 @@
+Test 9: Pauli Hamiltonians (Intermediate)
+Create a Classiq program for Hamiltonian evolution using Suzuki-Trotter:
+1. Define Hamiltonian H = 0.5XZXX + 0.25YIZI + 0.3XIZY
+2. Apply suzuki_trotter with:
+  - evolution_coefficient = 3
+  - repetitions = 4
+  - order = 2
+3. Use 4 qubits and synthesize the circuit

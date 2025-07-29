@@ -1,0 +1,8 @@
+Bell State Results:
+Counts: {'00': 1059, '11': 989}
+
+Expected states: {'11', '00'}
+Actual states: {'11', '00'}
+Bell state verification: PASSED
+State |00⟩: 1059/2048 = 0.517
+State |11⟩: 989/2048 = 0.483

@@ -1,0 +1,1 @@
+Iteration 2 failed - aux variable not initialized

@@ -1,0 +1,24 @@
+Attempt 2 Output:
+Traceback (most recent call last):
+  File "/Users/nivdavidson/Projects/classiq-library-1/quantum_dsl_tests/no-classiq-tutorial--Claude/test_16/generated_code_2.py", line 26, in <module>
+    model = create_model(main)
+            ^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/qmod/create_model_function.py", line 61, in create_model
+    model = entry_point.create_model(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 341, in create_model
+    return QFunc(_dec_main).create_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 156, in create_model
+    return self._create_generative_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 181, in _create_generative_model
+    return interpreter.expand()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nivdavidson/Projects/classiq-library-1/.venv/lib/python3.11/site-packages/classiq/qmod/semantics/error_manager.py", line 86, in report_errors
+    raise error_type("\n\t" + "\n\t".join(errors))
+classiq.interface.exceptions.ClassiqExpansionError: 
+	NameError: name 'b1' is not defined
+		at file generated_code_2.py line 6 character 18 in function foo
+
+Error: Variables b1 and b2 are not defined. Need to properly use bind statement.

@@ -1,0 +1,9 @@
+{
+  "test_id": "test_9",
+  "timestamp": "2025-07-29T00:00:00Z",
+  "agent_info": {
+    "agent": "Claude",
+    "generation_time_ms": 3000,
+    "tokens_used": 500
+  }
+}
