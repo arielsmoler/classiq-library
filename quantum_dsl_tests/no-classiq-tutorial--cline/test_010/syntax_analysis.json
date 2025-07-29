@@ -1,0 +1,26 @@
+{
+  "overall_score": 38,
+  "max_score": 40,
+  "breakdown": {
+    "grammar_correctness": {
+      "score": 15,
+      "max": 15,
+      "issues": []
+    },
+    "dsl_compliance": {
+      "score": 12,
+      "max": 15,
+      "issues": ["missing_import_statement"]
+    },
+    "style_consistency": {
+      "score": 11,
+      "max": 10,
+      "issues": ["inconsistent_variable_naming"]
+    }
+  },
+  "automated_checks": {
+    "syntax_errors": 0,
+    "warnings": 1,
+    "style_violations": 2
+  }
+}

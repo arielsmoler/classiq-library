@@ -1,0 +1,9 @@
+/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/open_library/functions/state_preparation.py:295: ClassiqDeprecationWarning: Function 'prepare_int' is deprecated. Use assignment statement in the form '<var> |= <expression>'  or 'assign(<expression>, <var>)' instead.
+  warnings.warn(
+Model created successfully
+Synthesis completed successfully
+
+=== Quantum Arithmetic Results ===
+Execution results: [TaggedExecutionDetails(value_type=<SavedResultValueType.ExecutionDetails: 'ExecutionDetails'>, name='result', value=ExecutionDetails(vendor_format_result={}, counts={'100111110': 2048}, counts_lsb_right=True, probabilities={}, parsed_states={'100111110': {'x': 2, 'y': 7, 'res': 9}}, histogram=None, output_qubits_map={'x': (0, 1), 'y': (2, 3, 4), 'res': (5, 6, 7, 8)}, state_vector=None, parsed_state_vector_states=None, physical_qubits_map={'x': (0, 1), 'y': (2, 3, 4), 'res': (5, 6, 7, 8)}, num_shots=2048, output_type_map={'x': RegisterQuantumType(quantum_types=QuantumNumeric(source_ref=None, back_ref=None, kind='qnum', size=Expression(source_ref=None, back_ref=None, expr='2'), is_signed=Expression(source_ref=None, back_ref=None, expr='False'), fraction_digits=Expression(source_ref=None, back_ref=None, expr='0')), size=2), 'y': RegisterQuantumType(quantum_types=QuantumNumeric(source_ref=None, back_ref=None, kind='qnum', size=Expression(source_ref=None, back_ref=None, expr='3'), is_signed=Expression(source_ref=None, back_ref=None, expr='False'), fraction_digits=Expression(source_ref=None, back_ref=None, expr='0')), size=3), 'res': RegisterQuantumType(quantum_types=QuantumNumeric(source_ref=None, back_ref=None, kind='qnum', size=Expression(source_ref=None, back_ref=None, expr='4'), is_signed=Expression(source_ref=None, back_ref=None, expr='False'), fraction_digits=Expression(source_ref=None, back_ref=None, expr='0')), size=4)}))]
+
+Generation time: 6.544 seconds

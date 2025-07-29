@@ -1,0 +1,27 @@
+{
+  "test_number": "002",
+  "test_name": "Bell State Creation (Basic)",
+  "agent": "cline",
+  "branch": "no-classiq-tutorial",
+  "classiq_version": "0.86.1",
+  "python_version": "3.11.4",
+  "virtual_env": "prod_py3.11",
+  "generation_time_seconds": 5.952,
+  "number_of_tokens": 1847,
+  "attempts": 1,
+  "success": true,
+  "error_messages": [],
+  "final_status": "SUCCESS - Bell state created correctly with only |00⟩ and |11⟩ states observed",
+  "execution_results": {
+    "total_shots": 2048,
+    "state_counts": {
+      "00": 1001,
+      "11": 1047
+    },
+    "state_probabilities": {
+      "00": 0.489,
+      "11": 0.511
+    }
+  },
+  "timestamp": "2025-07-29T11:43:54+03:00"
+}

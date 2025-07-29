@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_010/generated_code.py", line 17, in <module>
+    qmod = create_model(main)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/create_model_function.py", line 61, in create_model
+    model = entry_point.create_model(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 296, in create_model
+    return QFunc(_dec_main).create_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 150, in create_model
+    return self._create_generative_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 175, in _create_generative_model
+    return interpreter.expand()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/base_interpreter.py", line 131, in expand
+    self._error_manager.report_errors(ClassiqExpansionError)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/semantics/error_manager.py", line 86, in report_errors
+    raise error_type("\n\t" + "\n\t".join(errors))
+classiq.interface.exceptions.ClassiqExpansionError: 
+	ValidationError: 1 validation error for Expression
+expr
+  Value error, Expression 'x * x' is not supported (both sides of the operation are identical) [type=value_error, input_value='((x) * (x)) + 1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.9/v/value_error in function main
+If you need further assistance, please reach out on our Community Slack channel at: https://short.classiq.io/join-slack or open a support ticket at: https://classiq-community.freshdesk.com/support/tickets/new

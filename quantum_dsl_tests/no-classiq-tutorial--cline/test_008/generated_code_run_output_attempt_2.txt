@@ -1,0 +1,5 @@
+Model created successfully
+Synthesis completed successfully
+Quantum program link: https://platform.classiq.io/circuit/30XjqNXRl85pZWkc567F7TNkkYE
+
+Generation time: 6.009 seconds

@@ -1,0 +1,11 @@
+Quantum Program:
+Quantum program link: https://platform.classiq.io/circuit/30XrUWP8qdOy0jkfJ7qmN9NseYi
+
+Execution Results:
+[TaggedExecutionDetails(value_type=<SavedResultValueType.ExecutionDetails: 'ExecutionDetails'>, name='result', value=ExecutionDetails(vendor_format_result={}, counts={'111': 507, '100': 512, '000': 500, '010': 529}, counts_lsb_right=True, probabilities={}, parsed_states={'111': {'res': [1, 1, 1]}, '100': {'res': [0, 0, 1]}, '000': {'res': [0, 0, 0]}, '010': {'res': [0, 1, 0]}}, histogram=None, output_qubits_map={'res': (0, 1, 2)}, state_vector=None, parsed_state_vector_states=None, physical_qubits_map={'res': (0, 1, 2)}, num_shots=2048))]
+
+Result Analysis:
+State |111>: 507 counts
+State |100>: 512 counts
+State |000>: 500 counts
+State |010>: 529 counts

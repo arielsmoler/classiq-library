@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code_attempt_4.py", line 56, in <module>
+    run_test()
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code_attempt_4.py", line 30, in run_test
+    model = create_model(main)
+            ^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/qmod/create_model_function.py", line 61, in create_model
+    model = entry_point.create_model(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 334, in create_model
+    validate_main_function(self.func_decl)
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/qmod/semantics/validation/main_validation.py", line 18, in validate_main_function
+    _validate_main_param(param)
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/qmod/semantics/validation/main_validation.py", line 25, in _validate_main_param
+    _validate_main_quantum_param_type(param)
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/qmod/semantics/validation/main_validation.py", line 42, in _validate_main_quantum_param_type
+    raise ClassiqValueError("Function 'main' cannot declare quantum inputs")
+classiq.interface.exceptions.ClassiqValueError: Function 'main' cannot declare quantum inputs
+If you need further assistance, please reach out on our Community Slack channel at: https://short.classiq.io/join-slack or open a support ticket at: https://classiq-community.freshdesk.com/support/tickets/new

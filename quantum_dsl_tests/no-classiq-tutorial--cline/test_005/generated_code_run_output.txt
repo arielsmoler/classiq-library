@@ -1,0 +1,26 @@
+/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/open_library/functions/state_preparation.py:295: ClassiqDeprecationWarning: Function 'prepare_int' is deprecated. Use assignment statement in the form '<var> |= <expression>'  or 'assign(<expression>, <var>)' instead.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_005/generated_code.py", line 28, in <module>
+    model = create_model(main)
+            ^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/qmod/create_model_function.py", line 61, in create_model
+    model = entry_point.create_model(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 341, in create_model
+    return QFunc(_dec_main).create_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 156, in create_model
+    return self._create_generative_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 181, in _create_generative_model
+    return interpreter.expand()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/model_expansions/interpreters/base_interpreter.py", line 138, in expand
+    self._error_manager.report_errors(ClassiqExpansionError)
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/qmod/semantics/error_manager.py", line 86, in report_errors
+    raise error_type("\n\t" + "\n\t".join(errors))
+classiq.interface.exceptions.ClassiqExpansionError: 
+	TypeError: within_apply() got an unexpected keyword argument 'compute'
+		at file generated_code.py line 22 character 4 in function main
+If you need further assistance, please reach out on our Community Slack channel at: https://short.classiq.io/join-slack or open a support ticket at: https://classiq-community.freshdesk.com/support/tickets/new

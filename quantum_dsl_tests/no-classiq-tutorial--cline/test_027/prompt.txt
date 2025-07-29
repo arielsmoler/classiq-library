@@ -1,0 +1,6 @@
+Test 27: grover_search
+
+Write a quantum function in Classiq that defines the following logic:
+1. Create a predicate function that evaluates the expression ((a + b) + (c & 6)) % 4) | (4 & c)) == 4 for quantum numbers a (2 qubits), b (2 qubits), and c (3 qubits)
+2. Implement Grover's search algorithm with 3 iterations to find values that satisfy this predicate
+3. Use a phase oracle within the search

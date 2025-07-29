@@ -1,0 +1,8 @@
+Test 4: Superposition Arithmetic (Basic)
+Create a Classiq program that:
+1. Declares 'x' as a 2-qubit quantum number
+2. Declares 'y' as a 3-qubit quantum number
+3. Uses prepare_state to initialize x to equal superposition of 0 and 2
+4. Uses prepare_state to initialize y to equal superposition of 1, 2, 3, and 6
+5. Computes res = x + y
+6. Synthesize and execute

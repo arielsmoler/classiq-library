@@ -1,0 +1,14 @@
+Model created successfully
+Synthesis completed successfully
+
+Circuit Information:
+Number of qubits: 4
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code_attempt_5.py", line 59, in <module>
+    run_test()
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code_attempt_5.py", line 45, in run_test
+    print(f"Circuit depth: {quantum_program.data.depth}")
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/pydantic/main.py", line 856, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'GeneratedCircuitData' object has no attribute 'depth'

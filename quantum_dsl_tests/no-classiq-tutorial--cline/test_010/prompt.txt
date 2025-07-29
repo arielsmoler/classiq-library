@@ -1,0 +1,7 @@
+Test 10: Synthesis Optimization
+Create a Classiq program that demonstrates synthesis optimization for circuit depth:
+1.Define a main function with output QNum[3] 'x' and output QNum 'y'
+2.Allocate x and apply hadamard_transform to it
+3.Compute y = x² + 1 using quantum arithmetic
+4.Synthesize with depth optimization (minimize circuit depth)
+5.Show the resulting circuit and note the depth/width tradeoff

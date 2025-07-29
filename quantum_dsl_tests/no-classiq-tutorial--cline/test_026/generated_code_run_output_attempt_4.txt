@@ -1,0 +1,6 @@
+/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/open_library/functions/state_preparation.py:71: ClassiqDeprecationWarning: Function `allocate_num` is deprecated and will no longer be supported starting on 16/06/2025 at the earliest. Instead, use `allocate` which supports the same parameters. 
+  warnings.warn(
+Most probable result:
+Counts: {'101111': 6, '111101': 13, '101100': 60, '100100': 393, '110111': 61, '110110': 344, '100110': 357, '111100': 53, '111110': 57, '110100': 425, '100101': 62, '110101': 60, '101101': 13, '101110': 60, '111111': 12, '100111': 72}
+Most probable state: 110100
+Probability: 0.2075

@@ -1,0 +1,8 @@
+Test 5: Within-Apply Pattern (Intermediate)
+Implement a Classiq program using within-apply to compute res = x + y + z where:
+1. Initialize x=3, y=5, z=2
+2. Use within_apply to:
+  - First add x and y into a temporary variable
+  - Then add the temporary result to z to get final result
+  - Automatically uncompute the temporary variable
+3. Synthesize and execute

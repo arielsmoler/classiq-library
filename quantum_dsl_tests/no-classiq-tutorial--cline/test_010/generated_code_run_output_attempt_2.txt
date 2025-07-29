@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_010/generated_code_attempt_2.py", line 24, in <module>
+    from classiq.synthesis import SynthesisOptions, OptimizationParameter
+ImportError: cannot import name 'SynthesisOptions' from 'classiq.synthesis' (/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/synthesis.py)

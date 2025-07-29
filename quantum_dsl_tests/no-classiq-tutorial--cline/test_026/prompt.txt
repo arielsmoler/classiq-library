@@ -1,0 +1,6 @@
+Test 26: qstruct
+Write a quantum program in Classiq that defines the following logic:
+1. define a function foo that expects a Qstruct named QVars with 2 qnums x and y, each of size 3.
+2. in the function foo body it applies phase based on the sum of the 2 qnums.
+3. the main function initializes the qstruct, then applies hadamard transform on the qstruct before and after a call to foo.
+4. Synthesize the main function, execute the quantum program, and print the the most probable result.

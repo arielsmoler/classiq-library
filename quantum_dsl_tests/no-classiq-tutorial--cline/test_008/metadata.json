@@ -1,0 +1,39 @@
+{
+  "test_id": "test_008",
+  "timestamp": "2025-07-29T12:23:00Z",
+  "agent_info": {
+    "agent": "cline",
+    "total_attempts": 2,
+    "final_success": true,
+    "final_attempt": "generated_code_attempt_2.py"
+  },
+  "attempts": [
+    {
+      "attempt_number": 1,
+      "filename": "generated_code.py",
+      "success": false,
+      "error": "ClassiqError: The entry point function must be named 'main', got 'main_func'",
+      "error_type": "function_naming_error",
+      "generation_time_ms": null,
+      "tokens_used": 420,
+      "output_file": "generated_code_run_output.txt"
+    },
+    {
+      "attempt_number": 2,
+      "filename": "generated_code_attempt_2.py",
+      "success": true,
+      "error": null,
+      "error_type": null,
+      "generation_time_ms": 6009,
+      "tokens_used": 430,
+      "output_file": "generated_code_run_output_attempt_2.txt",
+      "circuit_link": "https://platform.classiq.io/circuit/30XjqNXRl85pZWkc567F7TNkkYE"
+    }
+  ],
+  "summary": {
+    "total_generation_time_ms": 6009,
+    "total_tokens_used": 850,
+    "main_issue_resolved": "Fixed function naming - entry point must be named 'main'",
+    "final_status": "SUCCESS"
+  }
+}

@@ -1,0 +1,4 @@
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_028/generated_code_attempt_3.py", line 22
+    res += 1
+        ^^
+SyntaxError: invalid syntax

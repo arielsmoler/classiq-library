@@ -1,0 +1,16 @@
+Model created successfully
+Synthesis completed successfully
+
+=== Within-Apply Addition Results ===
+Computing: x + y + z where x=3, y=5, z=2
+Expected result: 10
+Counts: {'1010': 2048}
+
+Total shots: 2048
+Result analysis:
+  |1010⟩: 2048 shots (1.000) -> decimal: 10
+Found result 10 in state |1010⟩ (last 4 bits: 1010 = 10)
+
+✓ SUCCESS: Found expected result 10 in the measurement outcomes
+
+Generation time: 0.297 seconds

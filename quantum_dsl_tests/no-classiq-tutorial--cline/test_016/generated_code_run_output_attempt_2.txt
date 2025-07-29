@@ -1,0 +1,91 @@
+Traceback (most recent call last):
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/base_interpreter.py", line 125, in expand
+    self._expand_main_func()
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/base_interpreter.py", line 108, in _expand_main_func
+    context = self._expand_operation(main_closure)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/base_interpreter.py", line 278, in _expand_operation
+    self._expand_body(operation)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/generative_interpreter.py", line 318, in _expand_body
+    emit_generative_statements(self, operation, args)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/generative_functions.py", line 201, in emit_generative_statements
+    generative_function._py_callable(*python_qmod_args)
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_016/generated_code_attempt_2.py", line 27, in main
+    foo(res)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 271, in __call__
+    super().__call__(*args, **kwargs)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/quantum_expandable.py", line 119, in __call__
+    super().__call__(*args, **kwargs)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/quantum_callable.py", line 55, in __call__
+    QCallable.CURRENT_EXPANDABLE.append_statement_to_body(
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/generative_functions.py", line 159, in append_statement_to_body
+    self._interpreter.emit_statement(stmt)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/base_interpreter.py", line 268, in emit_statement
+    self.emit(statement)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/functools.py", line 946, in _method
+    return method.__get__(obj, cls)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/generative_interpreter.py", line 155, in _emit_quantum_function_call
+    self.emit_quantum_function_call(call)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/frontend_generative_interpreter.py", line 33, in emit_quantum_function_call
+    DeclarativeQuantumFunctionCallEmitter(self).emit(call)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/quantum_operations/quantum_function_call.py", line 36, in emit
+    self._emit_quantum_function_call(
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/quantum_operations/call_emitter.py", line 176, in _emit_quantum_function_call
+    call = self._create_quantum_function_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/quantum_operations/call_emitter.py", line 215, in _create_quantum_function_call
+    new_declaration = self._expand_function(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/quantum_operations/call_emitter.py", line 291, in _expand_function
+    context = self._expand_operation(function)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/quantum_operations/emitter.py", line 88, in _expand_operation
+    return self._interpreter._expand_operation(closure)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/base_interpreter.py", line 278, in _expand_operation
+    self._expand_body(operation)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/generative_interpreter.py", line 318, in _expand_body
+    emit_generative_statements(self, operation, args)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/generative_functions.py", line 201, in emit_generative_statements
+    generative_function._py_callable(*python_qmod_args)
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_016/generated_code_attempt_2.py", line 7, in foo
+    b2 = QArray[QBit](2)
+         ^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/typing.py", line 1261, in __call__
+    result = self.__origin__(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/qmod_variable.py", line 394, in __init__
+    super().__init__(name, expr_str=_expr_str)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/qmod_variable.py", line 124, in __init__
+    else name.source_ref
+         ^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'source_ref'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_016/generated_code_attempt_2.py", line 30, in <module>
+    qmod = create_model(main)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/create_model_function.py", line 61, in create_model
+    model = entry_point.create_model(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 296, in create_model
+    return QFunc(_dec_main).create_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 150, in create_model
+    return self._create_generative_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/quantum_function.py", line 175, in _create_generative_model
+    return interpreter.expand()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/base_interpreter.py", line 129, in expand
+    self.process_exception(e)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/frontend_generative_interpreter.py", line 83, in process_exception
+    super().process_exception(e)
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/model_expansions/interpreters/base_interpreter.py", line 161, in process_exception
+    raise ClassiqInternalExpansionError(str(e)) from e
+classiq.interface.exceptions.ClassiqInternalExpansionError: Internal error occurred. Please contact Classiq support.
+Error: 'int' object has no attribute 'source_ref'
+If you need further assistance, please reach out on our Community Slack channel at: https://short.classiq.io/join-slack or open a support ticket at: https://classiq-community.freshdesk.com/support/tickets/new

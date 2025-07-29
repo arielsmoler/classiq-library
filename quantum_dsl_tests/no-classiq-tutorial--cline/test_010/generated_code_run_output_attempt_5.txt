@@ -1,0 +1,10 @@
+Circuit synthesized with depth optimization:
+Available attributes: ['cirq_json', 'compressed_debug_info', 'construct', 'copy', 'creation_time', 'data', 'debug_info', 'dict', 'execution_primitives_input', 'from_orm', 'get_code', 'get_code_by_priority', 'get_debug_info', 'get_registers_initialization', 'hardware_data', 'initial_values', 'interface_version', 'ionq', 'json', 'model', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'outputs', 'parse_file', 'parse_obj', 'parse_raw', 'program_circuit', 'program_id', 'qasm', 'qasm_cirq_compatible', 'qasm_version', 'qir', 'qsharp', 'raise_warnings', 'reformat_long_string_output_formats', 'save_results', 'schema', 'schema_json', 'set_interface_version', 'should_warn', 'show', 'show_async', 'synthesis_duration', 'synthesis_warnings', 'to_base_program', 'to_program', 'transpiled_circuit', 'update_forward_refs', 'validate', 'version']
+Circuit data available
+Circuit width: 19
+Quantum program link: https://platform.classiq.io/circuit/30Xqf9uuoQMCi2Zrhx09d7sd5kA
+
+Depth/Width Tradeoff Analysis:
+- Circuit optimized for minimal depth
+- This optimization may result in higher qubit count
+- The synthesis process balances depth vs width based on the optimization parameter

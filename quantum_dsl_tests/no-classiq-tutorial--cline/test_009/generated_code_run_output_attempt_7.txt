@@ -1,0 +1,10 @@
+Model created successfully
+Synthesis completed successfully
+
+Circuit Information:
+Number of qubits: 4
+
+=== Hamiltonian Evolution Results ===
+Counts: {'1000': 1, '1001': 3, '0000': 1, '0010': 1027, '1011': 283, '0011': 733}
+
+Generation time: 6.745 seconds

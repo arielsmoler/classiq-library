@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code_attempt_3.py", line 62, in <module>
+    main()
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code_attempt_3.py", line 36, in main
+    model = create_model(main_func)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/prod_py3.11/lib/python3.11/site-packages/classiq/qmod/create_model_function.py", line 57, in create_model
+    raise ClassiqError(
+classiq.interface.exceptions.ClassiqError: The entry point function must be named 'main', got 'main_func'
+If you need further assistance, please reach out on our Community Slack channel at: https://short.classiq.io/join-slack or open a support ticket at: https://classiq-community.freshdesk.com/support/tickets/new

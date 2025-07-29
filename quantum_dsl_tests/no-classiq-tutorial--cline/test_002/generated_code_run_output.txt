@@ -1,0 +1,14 @@
+Model created successfully
+Synthesis completed successfully
+
+=== Bell State Execution Results ===
+Counts: {'00': 1001, '11': 1047}
+
+Total shots: 2048
+State probabilities:
+  |00⟩: 1001 shots (0.489)
+  |11⟩: 1047 shots (0.511)
+
+✓ SUCCESS: Only expected Bell state components |00⟩ and |11⟩ observed
+
+Generation time: 5.952 seconds

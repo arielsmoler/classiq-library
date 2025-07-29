@@ -1,0 +1,99 @@
+{
+  "test_id": "test_028",
+  "test_name": "shor_55",
+  "timestamp": "2025-07-29T10:47:00Z",
+  "agent_info": {
+    "agent": "cline",
+    "case": "no-classiq-tutorial",
+    "total_attempts": 10,
+    "final_status": "partial_success",
+    "notes": "Circuit synthesis successful but attribute access issues prevented full execution"
+  },
+  "prompt": "Test 28: shor_55\nSuggest a working example of factoring 55 with Shor algorithm using Classiq. Synthesize and show the synthesized output.",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "failed",
+      "error": "SyntaxError: invalid syntax - parentheses not closed properly in repeat function",
+      "generation_time_ms": 1500,
+      "tokens_used": 420
+    },
+    {
+      "attempt": 2,
+      "status": "failed",
+      "error": "ClassiqExpansionError: Variable 'work_qubits' should be uninitialized",
+      "generation_time_ms": 1200,
+      "tokens_used": 380
+    },
+    {
+      "attempt": 3,
+      "status": "failed",
+      "error": "SyntaxError: invalid syntax - parentheses not closed in repeat lambda",
+      "generation_time_ms": 1100,
+      "tokens_used": 360
+    },
+    {
+      "attempt": 4,
+      "status": "failed",
+      "error": "ClassiqExpansionError: Cannot use initialized quantum variable 'res' on right-hand side",
+      "generation_time_ms": 1300,
+      "tokens_used": 390
+    },
+    {
+      "attempt": 5,
+      "status": "failed",
+      "error": "ClassiqExpansionError: Cannot use initialized quantum variable 'work_qubits' on right-hand side",
+      "generation_time_ms": 1000,
+      "tokens_used": 340
+    },
+    {
+      "attempt": 6,
+      "status": "failed",
+      "error": "TypeError: 'QNum' object is not subscriptable",
+      "generation_time_ms": 900,
+      "tokens_used": 320
+    },
+    {
+      "attempt": 7,
+      "status": "failed",
+      "error": "TypeError: 'QNum' object is not subscriptable",
+      "generation_time_ms": 800,
+      "tokens_used": 300
+    },
+    {
+      "attempt": 8,
+      "status": "partial_success",
+      "error": "AttributeError: 'QuantumProgram' object has no attribute 'depth'",
+      "generation_time_ms": 700,
+      "tokens_used": 280,
+      "notes": "Circuit synthesis successful, but attribute access failed"
+    },
+    {
+      "attempt": 9,
+      "status": "partial_success",
+      "error": "AttributeError: 'QuantumProgram' object has no attribute 'width'",
+      "generation_time_ms": 650,
+      "tokens_used": 270,
+      "notes": "Circuit synthesis successful, but attribute access failed"
+    },
+    {
+      "attempt": 10,
+      "status": "partial_success",
+      "error": "AttributeError: 'QuantumProgram' object has no attribute 'instructions'",
+      "generation_time_ms": 600,
+      "tokens_used": 260,
+      "notes": "Circuit synthesis successful, but attribute access failed"
+    }
+  ],
+  "summary": {
+    "problem": "Implement Shor's algorithm for factoring 55 using Classiq",
+    "approach": "Created simplified Shor's algorithm with QFT and inverse QFT",
+    "main_challenges": [
+      "Proper quantum variable initialization in Classiq",
+      "QNum subscriptability issues",
+      "QuantumProgram attribute access"
+    ],
+    "partial_success": "Successfully created quantum model and synthesized circuit",
+    "remaining_issues": "Unable to access QuantumProgram attributes for circuit statistics"
+  }
+}

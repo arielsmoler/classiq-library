@@ -1,0 +1,52 @@
+{
+  "test_id": "test_026",
+  "timestamp": "2025-07-29T10:28:00Z",
+  "agent_info": {
+    "agent": "cline",
+    "generation_time_ms": 1800,
+    "tokens_used": 520
+  },
+  "test_description": "qstruct - Write a quantum program that defines a function foo expecting a Qstruct with 2 qnums x and y (size 3), applies phase based on sum, and main function with hadamard transforms before/after foo call",
+  "attempts": [
+    {
+      "attempt": 1,
+      "file": "generated_code.py",
+      "status": "failed",
+      "error": "NameError: name 'qstruct' is not defined. Did you mean: 'QStruct'?",
+      "description": "Used incorrect decorator @qstruct instead of @QStruct"
+    },
+    {
+      "attempt": 2,
+      "file": "generated_code_attempt_2.py",
+      "status": "failed",
+      "error": "ClassiqValueError: Invalid quantum type 'int'",
+      "description": "Used @QStruct but incorrect QNum type annotation syntax"
+    },
+    {
+      "attempt": 3,
+      "file": "generated_code_attempt_3.py",
+      "status": "failed",
+      "error": "ClassiqValueError: Invalid quantum type 'int'",
+      "description": "Still had issues with QStruct and QNum type definitions"
+    },
+    {
+      "attempt": 4,
+      "file": "generated_code_attempt_4.py",
+      "status": "success_with_warning",
+      "warning": "ClassiqDeprecationWarning: Function `allocate_num` is deprecated",
+      "description": "Abandoned QStruct approach, used separate QNum parameters instead, but used deprecated allocate_num"
+    },
+    {
+      "attempt": 5,
+      "file": "generated_code_attempt_5.py",
+      "status": "success",
+      "description": "Fixed deprecation warning by using allocate instead of allocate_num, program runs successfully"
+    }
+  ],
+  "final_result": {
+    "successful": false,
+    "final_attempt": 9,
+    "execution_output": "QStruct implementation consistently failed with ClassiqValueError: Invalid quantum type 'int'",
+    "notes": "Unable to properly implement QStruct as required by the test prompt. All attempts to use @QStruct decorator failed with type annotation errors. Working solution exists without QStruct (attempt 5) but does not meet the test requirements."
+  }
+}

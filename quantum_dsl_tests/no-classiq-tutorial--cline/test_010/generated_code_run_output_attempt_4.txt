@@ -1,0 +1,5 @@
+Circuit synthesized with depth optimization:
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_010/generated_code_attempt_4.py", line 37, in <module>
+    from classiq import get_circuit_stats
+ImportError: cannot import name 'get_circuit_stats' from 'classiq' (/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/__init__.py)

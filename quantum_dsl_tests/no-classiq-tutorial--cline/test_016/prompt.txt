@@ -1,0 +1,9 @@
+Test 16: bind_foobar_example
+Write a quantum function in Classiq that defines the following logic:
+1.Create a function 'foo' that takes a 3-qubit array.
+2.Bind the 3-qubit array to separate variables (one single qubit 'b1' and one 2-qubit array 'b2'). Use explicitly the bind statement. 
+3.Apply hadamard transform to 'b2'
+4.Apply a controlled X gate where 'b2' controls 'b1'
+5.Rebind the variables back to the original 3-qubit array
+6. The main function should allocate 3 qubits and call this function
+7. Synthesize the main function, show the quantum program results, execute and verify the expected results.

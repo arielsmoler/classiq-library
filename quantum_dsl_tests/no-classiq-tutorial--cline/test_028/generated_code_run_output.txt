@@ -1,0 +1,4 @@
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_028/generated_code.py", line 20
+    res *= power_of_a % N
+        ^^
+SyntaxError: invalid syntax

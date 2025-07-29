@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code.py", line 59, in <module>
+    main()
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code.py", line 19, in main
+    hamiltonian = PauliOperator(pauli_terms)
+                  ^^^^^^^^^^^^^
+NameError: name 'PauliOperator' is not defined. Did you mean: 'LadderOperator'?

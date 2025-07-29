@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code_attempt_2.py", line 56, in <module>
+    main()
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code_attempt_2.py", line 30, in main
+    model = create_model(main_circuit, out_wires_count=4)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: create_model() got an unexpected keyword argument 'out_wires_count'

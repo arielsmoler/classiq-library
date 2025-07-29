@@ -1,0 +1,8 @@
+Oracle Test Results:
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_027/generated_code_attempt_8.py", line 46, in <module>
+    print(f"Counts: {results[0].counts}")
+                     ^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/pydantic/main.py", line 856, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'TaggedExecutionDetails' object has no attribute 'counts'

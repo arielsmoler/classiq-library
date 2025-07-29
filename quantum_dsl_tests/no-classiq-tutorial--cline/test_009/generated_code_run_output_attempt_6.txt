@@ -1,0 +1,12 @@
+Model created successfully
+Synthesis completed successfully
+
+Circuit Information:
+Number of qubits: 4
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code_attempt_6.py", line 58, in <module>
+    run_test()
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_009/generated_code_attempt_6.py", line 48, in run_test
+    job = execute(quantum_program, preferences=execution_preferences)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: execute() got an unexpected keyword argument 'preferences'

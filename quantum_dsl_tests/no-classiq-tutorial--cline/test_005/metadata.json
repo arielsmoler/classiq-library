@@ -1,0 +1,61 @@
+{
+  "test_id": "test_005",
+  "timestamp": "2025-07-29T08:58:00Z",
+  "agent_info": {
+    "agent": "cline",
+    "generation_time_ms": 297,
+    "tokens_used": 850
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "file": "generated_code.py",
+      "status": "failed",
+      "error_type": "ClassiqExpansionError",
+      "error_message": "within_apply() got an unexpected keyword argument 'compute'",
+      "issues": [
+        "Used deprecated prepare_int function",
+        "Incorrect within_apply syntax (used 'compute' instead of 'within')",
+        "Model creation failed"
+      ]
+    },
+    {
+      "attempt": 2,
+      "file": "generated_code_attempt_2.py",
+      "status": "ran_but_incorrect",
+      "execution_result": "{'10101010111': 2048}",
+      "expected_result": "10",
+      "actual_decimal": 1367,
+      "issues": [
+        "Fixed syntax errors from attempt 1",
+        "Code executed successfully but produced wrong result",
+        "Variable handling issues in within_apply pattern"
+      ]
+    },
+    {
+      "attempt": 3,
+      "file": "generated_code_attempt_3.py",
+      "status": "success",
+      "execution_result": "{'1010': 2048}",
+      "expected_result": "10",
+      "actual_decimal": 10,
+      "success_rate": "100%",
+      "total_shots": 2048,
+      "fixes_applied": [
+        "Corrected quantum variable declarations",
+        "Fixed within_apply pattern implementation",
+        "Proper result register handling"
+      ]
+    }
+  ],
+  "summary": {
+    "total_attempts": 3,
+    "successful_attempt": 3,
+    "final_status": "success",
+    "key_learnings": [
+      "within_apply uses 'within' and 'apply' parameters, not 'compute'",
+      "prepare_int is deprecated, use assignment syntax instead",
+      "Proper QNum variable declaration is crucial for correct results"
+    ]
+  }
+}

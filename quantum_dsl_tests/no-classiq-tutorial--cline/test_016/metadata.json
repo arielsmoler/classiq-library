@@ -1,0 +1,62 @@
+{
+  "test_id": "test_016",
+  "test_name": "bind_foobar_example",
+  "timestamp": "2025-07-29T10:24:00Z",
+  "agent_info": {
+    "agent": "cline",
+    "total_attempts": 4,
+    "successful_attempt": 4,
+    "final_status": "success"
+  },
+  "attempts": [
+    {
+      "attempt_number": 1,
+      "file_name": "generated_code.py",
+      "status": "failed",
+      "error_type": "NameError",
+      "error_message": "name 'b1' is not defined",
+      "generation_time_ms": 1500,
+      "tokens_used": 380
+    },
+    {
+      "attempt_number": 2,
+      "file_name": "generated_code_attempt_2.py",
+      "status": "failed",
+      "error_type": "AttributeError",
+      "error_message": "'int' object has no attribute 'source_ref'",
+      "generation_time_ms": 1200,
+      "tokens_used": 420
+    },
+    {
+      "attempt_number": 3,
+      "file_name": "generated_code_attempt_3.py",
+      "status": "failed",
+      "error_type": "TypeError",
+      "error_message": "QArray.__init__() got an unexpected keyword argument 'size'",
+      "generation_time_ms": 1100,
+      "tokens_used": 430
+    },
+    {
+      "attempt_number": 4,
+      "file_name": "generated_code_attempt_4.py",
+      "status": "success",
+      "error_type": null,
+      "error_message": null,
+      "generation_time_ms": 1300,
+      "tokens_used": 440,
+      "execution_results": {
+        "states_observed": ["111", "100", "000", "010"],
+        "total_shots": 2048,
+        "state_counts": {
+          "111": 507,
+          "100": 512,
+          "000": 500,
+          "010": 529
+        }
+      }
+    }
+  ],
+  "test_description": "Create a quantum function that binds a 3-qubit array to separate variables (1 qubit + 2 qubits), applies Hadamard to the 2-qubit array, applies controlled X gate, and rebinds back to original array",
+  "key_concepts": ["bind statement", "variable binding", "hadamard_transform", "controlled gates", "quantum arrays"],
+  "final_solution_summary": "Successfully implemented bind/rebind functionality with proper variable declarations, Hadamard transform on 2-qubit array, and controlled X gate operation"
+}

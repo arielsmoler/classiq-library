@@ -1,0 +1,13 @@
+Shor's Algorithm for Factoring N = 55
+=====================================
+Target number to factor: 55
+Using base a = 2 (since gcd(2, 55) = 1)
+
+Synthesizing quantum circuit...
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_028/generated_code_attempt_9.py", line 42, in <module>
+    print(f"Circuit width: {qprog.width}")
+                            ^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/pydantic/main.py", line 856, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'QuantumProgram' object has no attribute 'width'

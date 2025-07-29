@@ -1,0 +1,100 @@
+{
+  "test_number": 9,
+  "test_name": "Pauli Hamiltonians (Intermediate)",
+  "difficulty": "Intermediate",
+  "prompt": "Create a Classiq program for Hamiltonian evolution using Suzuki-Trotter:\n1. Define Hamiltonian H = 0.5XZXX + 0.25YIZI + 0.3XIZY\n2. Apply suzuki_trotter with:\n  - evolution_coefficient = 3\n  - repetitions = 4\n  - order = 2\n3. Use 4 qubits and synthesize the circuit",
+  "agent": "cline",
+  "case": "no-classiq-tutorial",
+  "total_attempts": 7,
+  "successful_attempt": 7,
+  "final_status": "SUCCESS",
+  "generation_time_seconds": 6.745,
+  "total_tokens": null,
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAILED",
+      "error": "NameError: name 'PauliOperator' is not defined. Did you mean: 'LadderOperator'?",
+      "error_type": "NameError",
+      "description": "Used incorrect PauliOperator class name"
+    },
+    {
+      "attempt": 2,
+      "status": "FAILED",
+      "error": "TypeError: create_model() got an unexpected keyword argument 'out_wires_count'",
+      "error_type": "TypeError",
+      "description": "Used incorrect parameter name for create_model function"
+    },
+    {
+      "attempt": 3,
+      "status": "FAILED",
+      "error": "ClassiqError: The entry point function must be named 'main', got 'main_func'",
+      "error_type": "ClassiqError",
+      "description": "Entry point function had incorrect name"
+    },
+    {
+      "attempt": 4,
+      "status": "FAILED",
+      "error": "ClassiqValueError: Function 'main' cannot declare quantum inputs",
+      "error_type": "ClassiqValueError",
+      "description": "Main function incorrectly declared quantum inputs as parameters"
+    },
+    {
+      "attempt": 5,
+      "status": "FAILED",
+      "error": "AttributeError: 'GeneratedCircuitData' object has no attribute 'depth'",
+      "error_type": "AttributeError",
+      "description": "Tried to access non-existent depth attribute"
+    },
+    {
+      "attempt": 6,
+      "status": "FAILED",
+      "error": "TypeError: execute() got an unexpected keyword argument 'preferences'",
+      "error_type": "TypeError",
+      "description": "Used incorrect parameter name for execute function"
+    },
+    {
+      "attempt": 7,
+      "status": "SUCCESS",
+      "error": null,
+      "error_type": null,
+      "description": "Successfully created Hamiltonian evolution with Suzuki-Trotter, synthesized circuit with 4 qubits, and executed with results showing quantum state distribution"
+    }
+  ],
+  "key_concepts": [
+    "Hamiltonian evolution",
+    "Suzuki-Trotter decomposition",
+    "Pauli operators",
+    "PauliTerm",
+    "suzuki_trotter function",
+    "QArray allocation",
+    "Circuit synthesis",
+    "Quantum execution"
+  ],
+  "classiq_functions_used": [
+    "PauliTerm",
+    "Pauli.X",
+    "Pauli.Y",
+    "Pauli.Z", 
+    "Pauli.I",
+    "suzuki_trotter",
+    "QArray",
+    "allocate",
+    "create_model",
+    "synthesize",
+    "execute"
+  ],
+  "final_result": {
+    "circuit_width": 4,
+    "execution_counts": {
+      "1000": 1,
+      "1001": 3,
+      "0000": 1,
+      "0010": 1027,
+      "1011": 283,
+      "0011": 733
+    },
+    "total_shots": 2048,
+    "dominant_states": ["0010", "0011", "1011"]
+  }
+}

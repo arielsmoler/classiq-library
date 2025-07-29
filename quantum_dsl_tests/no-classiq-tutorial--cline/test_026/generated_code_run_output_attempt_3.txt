@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/Users/arielsmoler/AI_project/ai_tests_classiq-library/quantum_dsl_tests/no-classiq-tutorial--cline/test_026/generated_code_attempt_3.py", line 5, in <module>
+    @QStruct
+     ^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/qmod_variable.py", line 492, in __init__
+    temp_var = QStruct.to_qvar(name, type(self), _expr_str)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/qmod_variable.py", line 511, in to_qvar
+    field_types = {
+                  ^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/qmod_variable.py", line 512, in <dictcomp>
+    field_name: (_get_root_type(field_type), field_type)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arielsmoler/.pyenv/versions/3.11.4/lib/python3.11/site-packages/classiq/qmod/qmod_variable.py", line 761, in _get_root_type
+    raise ClassiqValueError(f"Invalid quantum type {root_type.__name__!r}")
+classiq.interface.exceptions.ClassiqValueError: Invalid quantum type 'int'
+If you need further assistance, please reach out on our Community Slack channel at: https://short.classiq.io/join-slack or open a support ticket at: https://classiq-community.freshdesk.com/support/tickets/new
