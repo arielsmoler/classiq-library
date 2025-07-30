@@ -1,1 +1,12 @@
 test_id,timestamp,syntax_score,functional_score,structure_score,final_score,notes
+test_2,2025-07-29,40,35,25,100,Perfect Bell State Creation
+test_3,2025-07-29,38,35,23,96,prepare_int deprecation + result parsing
+test_4,2025-07-29,25,35,23,83,Allocated before prepare_state + qnum slice + made-up "hadamard" function
+test_5,2025-07-29,35,35,20,90,Bad first attempt at within-apply + result parsing
+test_8,2025-07-29,35,35,22,92,Good control operator + misnamed entrypoint + qfuncs declared inside function
+test_9,2025-07-29,20,35,20,75,4 bad attempts at syntax + 2 bad attempts to execute and parse results
+test_10,2025-07-29,23,35,18,76,No "**" syntax + halucinated imports + no QP depth
+test_16,2025-07-29,25,35,25,85,Bad QArray declaration
+test_26,2025-07-29,0,0,0,0,Couldn't define QStruct properly
+test_27,2025-07-29,0,0,5,5,Not close to actual Grover + many syntax mistakes
+test_28,2025-07-29,0,0,0,0,Completely ignored Shor notebook and tried to implement everything + many syntax mistakes

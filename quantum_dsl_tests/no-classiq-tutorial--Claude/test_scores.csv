@@ -1,1 +1,12 @@
 test_id,timestamp,syntax_score,functional_score,structure_score,final_score,notes
+test_2,2024-12-19,40,35,25,100,Perfect Bell State Creation
+test_3,2024-12-19,32,35,25,92,Took 3 iterations to fix variable initialization + deprecation warnings and result parsing
+test_4,2024-12-19,35,35,20,90,Took 2 iterations to fix variable declaration and uses explicit qnum size
+test_5,2024-12-19,32,35,22,89,Good within-apply but uses explicit qnum size
+test_8,2024-12-19,40,35,25,100,Perfect control operator
+test_9,2024-12-19,32,32,15,79,Took 3 iterations to get to working hamiltonian syntax but it's bad
+test_10,2024-12-19,10,30,10,50,Didn't find "**" syntax + explicit number of qubits in allocation when not required
+test_16,2024-12-19,29,35,23,87,Took 2 iterations to fix variable initialization + repeated explicit qarray size + unrelated viz issue with var names
+test_26,2024-12-19,0,0,15,15,Didn't find the "phase" statement + took 3 iterations to get QStruct right
+test_27,2024-12-19,10,35,5,50,Predicate oracle allocates too many temp vars + and manually implemented library functions
+test_28,2024-12-19,5,0,0,5,Tried to implement everything instead and didn't use library example (*stopped after 5 attempts)
